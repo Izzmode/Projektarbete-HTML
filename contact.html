@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Våra tjänster</title>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Creepster&family=Eater&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/74a17a880c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- MIN CSS FIL -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="index.html" class="logo"
+          ><img src="images/LOGO.webp" alt="MonsterNannys Logo"
+        /></a>
+
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"
+          ><span class="hamb-line"></span
+        ></label>
+        <nav class="nav">
+          <ul class="menu">
+            <li><a href="aboutus.html">Om oss</a></li>
+            <li><a href="services.html">Våra tjänster</a></li>
+            <li><a href="referens.html">Referenser</a></li>
+            <li>
+              <a href="contact.html"><em>Kontakt</em></a>
+            </li>
+            <li><a href="index.html">Startsida</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="contact">
+        <article class="contact">
+          <h1>Är ni nyfikna på att lära er mer om oss?</h1>
+          <p>
+            Ni är varmt välkomna att kontakta oss om ni har frågor eller
+            funderingar.
+          </p>
+          <div class="contact-container">
+            <div class="phone">
+              <h2>Telefon</h2>
+              <br />
+              <p>070 123 45 67</p>
+              <br />
+              <p class="hours">Vardagar 09-17.</p>
+            </div>
+            <div class="mail">
+              <h2>E-post</h2>
+              <h3>Söker du jobb och har frågor:</h3>
+              <p>zoom@monsternannys.com</p>
+              <br />
+              <h3>Övriga frågor:</h3>
+              <p>info@monsternannys.com</p>
+              <br />
+            </div>
+
+            <div class="adress">
+              <h2>Adress</h2>
+              <h3>Besök oss gärna på vårt anrika kontor:</h3>
+              <br />
+              <p class="adress">
+                Täby kyrkby <br />
+                187 74 Stockholm
+              </p>
+            </div>
+            <div class="house">
+              <img src="images/house3.webp" alt="övergivet spökhus" />
+
+              <input
+                class="button"
+                type="button"
+                onclick="window.location.href='https://sl.se/';"
+                value="Hitta med SL"
+              />
+            </div>
+
+            <form class="contactform">
+              <p class="formtext">
+                Ni kan även kontakta oss via vårat formlär här på hemsidan:
+              </p>
+              <label for="form">Vad undrar du över?</label>
+              <select name="form" id="form">
+                <option value="buy">Köp av produkt/tjänst</option>
+                <option value="ask">Frågor om företaget</option>
+                <option value="opinion">Synpunkter på webbplats”</option>
+              </select>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-post"
+              />
+              <textarea
+                class="fritext"
+                name="fritext"
+                id="fritext"
+                cols="30"
+                rows="10"
+                placeholder="Din fråga"
+              ></textarea>
+              <button type="submit">Skicka</button>
+            </form>
+          </div>
+        </article>
+      </main>
+
+      <aside>
+        <div class="aside-container">
+          <div>
+            <i class="fa-regular fa-thumbs-up fa-2xl"></i>
+            <h1>96%</h1>
+            <p>Rekommenderar vår barnpassning</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-heart fa-2xl"></i>
+            <h1>9/10</h1>
+            <p>Upplever mindre stress i vardagen</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-people-roof fa-2xl"></i>
+            <h1>5000+</h1>
+            <p>Mycket nöjda familjer varje år</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-building fa-2xl"></i>
+            <h1>1873</h1>
+            <p>Svenskt företag med 150 års erfarenhet</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <div>
+        <div class="footerlogo">
+          MonsterNannys
+          <p>'Vi skapades för barnens skull' &copy;</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="aboutus.html">Om oss</a></li>
+          <li><a href="services.html">Våra tjänster</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="referens.html">Referenser</a></li>
+          <li><a href="contact.html">Kontakta oss</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

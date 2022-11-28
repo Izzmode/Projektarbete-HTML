@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MonsterNannys</title>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Creepster&family=Eater&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/74a17a880c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- MIN CSS -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="#" class="logo"
+          ><img src="images/LOGO.webp" alt="MonsterNannys Logo"
+        /></a>
+
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"
+          ><span class="hamb-line"></span
+        ></label>
+        <nav class="nav">
+          <ul class="menu">
+            <li><a href="aboutus.html">Om oss</a></li>
+            <li><a href="services.html">Våra tjänster</a></li>
+            <li><a href="referens.html">Referenser</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li>
+              <a href="#"><em>Startsida</em></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="cta">
+        <div class="row1">
+          <label for="monsters">Välj ditt Monster</label>
+          <select name="monsters" id="monsters">
+            <option value="skeleton">Jack Skeletor</option>
+            <option value="ghost">Spökis</option>
+            <option value="monster">Herr Snigel</option>
+            <option value="mummy">Mumien</option>
+            <option value="which">Häxan HiaHia</option>
+            <option value="zombie">Zoom</option>
+          </select>
+          <input
+            class="button"
+            type="button"
+            onclick="window.location.href='aboutus.html';"
+            value="Läs mer om oss"
+          />
+        </div>
+        <div class="row2">
+          <label for="date">Välj när</label>
+          <input type="date" id="date" name="date" />
+          <input
+            class="button"
+            type="button"
+            onclick="window.location.href='services.html';"
+            value="Boka nu"
+          />
+        </div>
+      </div>
+      <div class="flex-content">
+        <main class="main-index">
+          <article>
+            <h1>Barnpassning på dina villkor</h1>
+            <p>
+              Välkomna till oss på MonsterNannys! Hos oss hittar du ett brett
+              urval av utbildade och trygga barnvakter i hela Stockholm med
+              omnejd. Vi erbjuder barnpassning för alla åldrar och orter, så att
+              du kan hitta ett monster som fungerar bra ihop med din familj.
+            </p>
+            <img
+              class="article-picture"
+              src="images/siluett.webp"
+              alt="siluettbild av två barn och en häxa"
+            />
+          </article>
+        </main>
+        <aside>
+          <div class="aside-container">
+            <div>
+              <i class="fa-regular fa-thumbs-up fa-2xl"></i>
+              <h1>96%</h1>
+              <p>Rekommenderar vår barnpassning</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-heart fa-2xl"></i>
+              <h1>9/10</h1>
+              <p>Upplever mindre stress i vardagen</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-people-roof fa-2xl"></i>
+              <h1>5000+</h1>
+              <p>Mycket nöjda familjer varje år</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-building fa-2xl"></i>
+              <h1>1873</h1>
+              <p>Svenskt företag med 150 års erfarenhet</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <div class="footerlogo">
+          MonsterNannys
+          <p>'Vi skapades för barnens skull' &copy;</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="aboutus.html">Om oss</a></li>
+          <li><a href="services.html">Våra tjänster</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="referens.html">Referenser</a></li>
+          <li><a href="contact.html">Kontakta oss</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

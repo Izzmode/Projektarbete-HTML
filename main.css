@@ -1,0 +1,627 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2B2B2B;
+  font-family: "Roboto Condensed", cursive, sans-serif;
+}
+body .header {
+  background-color: hsl(284deg, 65%, 54%);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  /* Hide checkbox */
+  /* Nav menu */
+  /* Menu Icon */
+}
+body .header a.logo {
+  width: 81%;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+body .header img {
+  width: 81%;
+}
+body .header .side-menu {
+  display: none;
+}
+body .header a {
+  text-decoration: none;
+}
+body .header .nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  top: 10vh;
+}
+body .header .nav ul {
+  list-style: none;
+}
+body .header .nav ul a {
+  display: block;
+  padding: 30px;
+  color: white;
+  background-color: black;
+}
+body .header .nav ul a:hover {
+  background-color: grey;
+}
+body .header .hamb {
+  cursor: pointer;
+  float: right;
+  padding: 5% 10px;
+}
+body .header .hamb .hamb-line {
+  background: white;
+  display: block;
+  height: 2.5px;
+  position: relative;
+  width: 25px;
+}
+body .header .hamb .hamb-line::before, body .header .hamb .hamb-line::after {
+  background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+body .header .hamb .hamb-line::before {
+  top: 5px;
+}
+body .header .hamb .hamb-line::after {
+  top: -5px;
+}
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav {
+  max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 5px 0px gray;
+  gap: 1%;
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-weight: 700;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-top: 1vh;
+  background-color: hsl(284deg, 65%, 54%);
+  padding: 1%;
+  border-radius: 1%;
+}
+.cta .row1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1vh;
+  align-items: center;
+}
+.cta .row1 select {
+  width: 100%;
+  height: 30px;
+  font-family: "Roboto Condensed", cursive, sans-serif;
+  border-radius: 5px;
+}
+.cta .row1 .button {
+  width: 100%;
+  background-color: hsl(58deg, 100%, 68%);
+  font-weight: 700;
+  font-family: "Creepster", cursive, sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+  height: 30px;
+}
+.cta .row1 .button:hover {
+  background-color: black;
+  color: white;
+}
+.cta .row1 .button a {
+  text-decoration: none;
+  color: #000;
+}
+.cta .row1 .button a:hover {
+  color: white;
+}
+.cta .row2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1vh;
+  align-items: center;
+}
+.cta .row2 input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+.cta .row2 .button {
+  background-color: hsl(58deg, 100%, 68%);
+  font-weight: 700;
+  font-family: "Creepster", cursive, sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+}
+.cta .row2 .button:hover {
+  background-color: black;
+  color: white;
+}
+
+main {
+  padding: 4%;
+}
+main article {
+  color: white;
+  text-align: center;
+  font-size: 90%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+main article h1 {
+  padding-bottom: 1vh;
+  font-family: "Amatic SC", cursive, sans-serif;
+}
+main article .article-picture {
+  width: 80%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+main article p {
+  padding-bottom: 3%;
+}
+
+aside {
+  padding: 4%;
+  background-color: hsl(0deg, 0%, 10%);
+  color: white;
+  text-align: center;
+  font-size: 90%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+aside h1 {
+  font-family: "Creepster", cursive, sans-serif;
+  padding-bottom: 1vh;
+  padding-top: 10px;
+}
+aside div.aside-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 10px;
+}
+aside div.aside-container div {
+  border-radius: 5px;
+  background-color: hsl(284deg, 55%, 35%);
+  width: 140px;
+  height: 140px;
+  padding: 5px;
+  box-shadow: 1px 1px 5px 0px gray;
+}
+aside div.aside-container div i {
+  margin-top: 20px;
+}
+aside div.aside-container div h1 {
+  font-size: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+  justify-content: space-around;
+  padding-top: 7px;
+}
+footer div.footerlogo {
+  color: hsl(58deg, 100%, 68%);
+  font-family: "Eater", cursive, sans-serif;
+}
+footer p {
+  font-family: "Roboto condensed", cursive, Arial, sans-serif;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  padding: 3px;
+  font-size: 13px;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer a:visited {
+  color: white;
+}
+footer a:link {
+  color: white;
+}
+
+main.main-aboutus h1 {
+  font-family: "Amatic SC", cursive, sans-serif;
+}
+
+div.employes {
+  display: flex;
+  flex-wrap: wrap;
+}
+div.employes div {
+  background-color: hsl(284deg, 55%, 35%);
+  border-radius: 5px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+div.employes div h2 {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-size: 30px;
+}
+div.employes div h3 {
+  font-size: 20px;
+  font-weight: 100;
+  padding-bottom: 10px;
+  font-family: "Amatic SC", cursive, sans-serif;
+}
+div.employes div p {
+  padding: 5px;
+  padding-bottom: 10px;
+}
+div.employes img {
+  width: 30vw;
+}
+
+main.services img {
+  width: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+  margin-bottom: 10px;
+  -o-object-position: 40% 60%;
+     object-position: 40% 60%;
+}
+
+article.services h1 {
+  font-family: "Amatic SC", cursive, sans-serif;
+}
+article.services h2 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+article.services p {
+  padding: 5px;
+  padding-bottom: 10px;
+}
+article.services button {
+  width: 50%;
+  background-color: hsl(58deg, 100%, 68%);
+  font-weight: 700;
+  font-family: "Creepster", cursive, sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 100%;
+}
+article.services button:hover {
+  background-color: black;
+  color: white;
+}
+article.services div {
+  background-color: hsl(284deg, 55%, 35%);
+  border-radius: 5px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+article.referens h1 {
+  font-family: "Amatic SC", cursive, sans-serif;
+}
+article.referens div.flex-family div {
+  background-color: hsl(284deg, 55%, 35%);
+  border-radius: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+article.referens img {
+  border-radius: 5px;
+  width: 100%;
+}
+article.referens p {
+  padding: 5px;
+}
+
+main.contact h1 {
+  font-family: "Amatic SC", cursive, sans-serif;
+}
+main.contact article div.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+main.contact article div.contact-container div {
+  width: 100%;
+  background-color: hsl(284deg, 55%, 35%);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+main.contact article div.contact-container div h2 {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+main.contact article div.contact-container div h3 {
+  font-weight: 100;
+}
+main.contact article div.contact-container div p {
+  color: hsl(58deg, 100%, 68%);
+  font-size: 20px;
+}
+main.contact article div.contact-container div .hours {
+  color: white;
+  font-size: 15px;
+}
+main.contact article div.contact-container div.house {
+  background-color: hsl(0deg, 0%, 17%);
+}
+main.contact article div.contact-container img {
+  width: 100%;
+}
+main.contact article div.contact-container .button {
+  background-color: hsl(218deg, 87%, 55%);
+  width: 100%;
+  padding: 3px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+main.contact article div.contact-container .button:hover {
+  background-color: hsl(218deg, 87%, 65%);
+}
+main.contact p.formtext {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 20px;
+}
+main.contact form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 5px;
+  gap: 1px;
+}
+main.contact form label {
+  color: white;
+  text-align: center;
+  background-color: hsl(284deg, 65%, 54%);
+  width: 100%;
+  border-radius: 2px;
+  padding: 2px;
+}
+main.contact form textarea {
+  height: 60px;
+  padding: 5px;
+  font-family: "Roboto Condensed", cursive, sans-serif;
+}
+main.contact form input {
+  width: 100%;
+  padding: 5px;
+  font-family: "Roboto Condensed", cursive, sans-serif;
+}
+main.contact form select {
+  width: 100%;
+  padding: 5px;
+  font-family: "Roboto Condensed", cursive, sans-serif;
+}
+main.contact form button {
+  width: 100%;
+  padding: 3px;
+  border-radius: 3px;
+  border: none;
+  background-color: hsl(284deg, 65%, 54%);
+  color: hsl(58deg, 100%, 68%);
+  font-family: "Creepster", cursive, sans-serif;
+  font-size: 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+main.contact form button:hover {
+  background-color: #000;
+  color: white;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+  body .header {
+    display: block;
+    height: 20vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  body .header .hamb {
+    display: none;
+  }
+  body .header .nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 10px;
+  }
+  body .header .menu li {
+    float: left;
+    width: 20%;
+  }
+  body .header .menu a:hover {
+    background-color: transparent;
+    color: white;
+  }
+  body div.row1, body div.row2 {
+    width: 30%;
+    font-size: 20px;
+  }
+  body main.main-index p {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 15px;
+  }
+  body main.main-aboutus .employes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  body main.main-aboutus .employes div {
+    width: 32%;
+  }
+  body main.main-aboutus .employes div img {
+    width: 200px;
+  }
+  body aside div.aside-container {
+    justify-content: space-around;
+  }
+  main.services img {
+    height: 250px;
+  }
+  div.flex-family {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: hsl(284deg, 55%, 35%);
+  }
+  div.flex-family div {
+    width: 300px;
+    margin-top: 10px;
+  }
+  main.contact form {
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+  main.contact form label {
+    padding: 10px;
+    width: none;
+  }
+  main.contact form select {
+    padding: 10px;
+    width: none;
+  }
+  main.contact form input {
+    padding: 10px;
+    width: none;
+  }
+  main.contact form textarea {
+    height: 80px;
+  }
+  main.contact form button {
+    padding: 10px;
+    width: none;
+  }
+  main.contact article.contact div.contact-container {
+    display: flex;
+    justify-content: center;
+  }
+  main.contact article.contact div.contact-container div {
+    width: 40%;
+    padding: 5px;
+  }
+  main.contact article.contact div.contact-container div p {
+    font-size: 20px;
+  }
+  main.contact article.contact div.contact-container div.house {
+    background-color: hsl(0deg, 0%, 17%);
+    width: 40%;
+    box-shadow: 1px 1px 5px 0px black;
+    padding: 0px;
+  }
+  main.contact article.contact div.contact-container div.house img {
+    border-radius: 5px;
+    padding-bottom: 2px;
+  }
+  main.contact article.contact div.contact-container div.house .button {
+    padding: 5px;
+  }
+}
+/* Responsiveness */
+@media (min-width: 992px) {
+  aside div.aside-container div {
+    width: 24%;
+  }
+  body main.main-index p {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 17px;
+  }
+  body div.container main.contact form {
+    margin-right: 250px;
+    margin-left: 250px;
+  }
+  body div.container main.contact article.contact div.contact-container div {
+    width: 24%;
+  }
+  body div.container main.contact article.contact div.contact-container div.house {
+    width: 24%;
+  }
+  body aside div.aside-container div {
+    width: 24%;
+  }
+}
+/* Responsiveness */
+@media (min-width: 1200px) {
+  body main .article-picture {
+    width: 60%;
+  }
+  body main h1 {
+    font-size: 30px;
+  }
+  body main p {
+    font-size: 20px;
+  }
+  body aside div.aside-container div {
+    width: 24%;
+  }
+  body main.main-index p {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}/*# sourceMappingURL=main.css.map */
