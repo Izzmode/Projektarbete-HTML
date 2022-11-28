@@ -40,18 +40,17 @@ body{
         position: sticky;
         top: 0;
         width: 100%;
-        // padding-bottom: 5px;
-        // padding-top: 10px;
         height: 10vh;
         display: flex;
         align-items: center;
+
         a.logo{
             width: 81%;
             text-decoration: none;
             display: inline-block;
             margin-left: 15px;
-            // margin-top: 15px;
         }
+
         img{
             width: 81%;
         }
@@ -59,6 +58,7 @@ body{
         .side-menu {
             display: none;
         } /* Hide checkbox */
+
         a{
             text-decoration: none;
         }
@@ -73,8 +73,10 @@ body{
             max-height: 0;
             transition: max-height .5s ease-out;
             top: 10vh;
+
             ul{
                 list-style: none;
+
                 a{
                     display: block;
                     padding: 30px;
@@ -151,17 +153,20 @@ body{
     background-color: $purple; 
     padding: 1%;
     border-radius: 1%;
+
     .row1{
         display: flex;
         flex-direction: column;
         gap: 0.1vh;
         align-items: center;
+
         select{
             width: 100%;
             height: 30px;
             font-family: 'Roboto Condensed', cursive, sans-serif;
             border-radius: 5px;
         }
+
         .button{
             width: 100%;
             background-color: $fontcolor;
@@ -170,7 +175,6 @@ body{
             padding: 5px;
             border-radius: 5px;
             height: 30px;
-            
             @include hover-color(black, white);
             a{
                 text-decoration: none;
@@ -183,25 +187,26 @@ body{
             }
         }
     }
+
     .row2{
         display: flex;
         flex-direction: column;
         gap: 0.1vh;
         align-items: center;
+
         input{
             width: 100%;
             height: 30px;
             border-radius: 5px;
         }
+
         .button{
-            
             background-color: $fontcolor;
             font-weight: 700;
             font-family: 'Creepster', cursive, sans-serif;
             padding: 5px;
             border-radius: 5px;
             @include hover-color(black, white);
-
         }
     }
 }
@@ -213,11 +218,13 @@ main{
         color: white;
         text-align: center;
         font-size: 90%;
-        font-family: 'Roboto Condensed', sans-serif;;
+        font-family: 'Roboto Condensed', sans-serif;
+
         h1{
             padding-bottom: 1vh;
             font-family: 'Amatic SC', cursive, sans-serif;
         }
+
         .article-picture{
             width: 80%;
             padding-left: 4%;
@@ -237,16 +244,19 @@ aside{
     text-align: center;
     font-size: 90%;
     font-family: 'Roboto Condensed', sans-serif;
+
     h1{
         font-family: 'Creepster', cursive, sans-serif;
         padding-bottom: 1vh;
         padding-top: 10px;
     }
+
     div.aside-container{
         @include flexwrap;
         justify-content: center;
         padding-top: 10px;
         gap: 10px;
+
         div{
             border-radius: 5px;
             background-color: $darkpurple;
@@ -277,16 +287,18 @@ footer{
     font-size: 10px;
     justify-content: space-around;
     padding-top: 7px;
+
     div.footerlogo{
         color: $fontcolor;
         font-family: 'Eater', cursive, sans-serif;
     }
+
     p{
         font-family: 'Roboto condensed', cursive, Arial, sans-serif;
         color:white;
     }
     
-    ul {
+    ul{
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -295,6 +307,7 @@ footer{
             font-size: 13px;
         }
       }
+
     a{
         text-decoration: none;
         &:hover{ 
@@ -330,8 +343,7 @@ div.employes{
         padding-top: 5px;
         margin-bottom: 10px;
         width: 100%;
-        
-
+    
         h2{
             font-family: 'Amatic SC', cursive, sans-serif;
             font-size: 30px;
@@ -399,7 +411,6 @@ article.services{
         padding-top: 5px;
         margin-bottom: 10px;
         width: 100%;
-        // font-family: 'Amatic SC', cursive;
     }
 }
 
@@ -411,6 +422,7 @@ article.referens{
     h1{
         font-family: 'Amatic SC', cursive, sans-serif;
     }
+
     div.flex-family{
         
         div{
@@ -418,7 +430,6 @@ article.referens{
             border-radius: 5px;
             padding-bottom: 5px;
             margin-bottom: 10px;
-            // width: 100%;
         }
         
     }
@@ -446,13 +457,13 @@ main.contact{
             justify-content: center;
             gap: 5px;
 
-
             div{
                 width: 100%;
                 background-color: $darkpurple;
                 border-radius: 5px;
                 margin-bottom: 10px;
                 padding-bottom: 5px;
+
                 h2{
                     font-family: 'Amatic SC', cursive, sans-serif;
                     font-size: 30px;
@@ -472,13 +483,13 @@ main.contact{
                     color:white;
                     font-size: 15px;
                 }
-
-            
                 
             }
+
             div.house{
                 background-color: $darkgrey;
             }
+
             img{
                 width: 100%;
             }
@@ -496,46 +507,67 @@ main.contact{
             }
         }
     }
+
     p.formtext{
-        color: white;
+        color: black;
         text-align: center;
-        font-size: 15px;
+        font-size: 25px;
+        font-weight: 600;
         padding-top: 20px;
+        background-color: $purple;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding: 5px 5px 10px 5px;
+        border-radius: 5px 5px 0px 0px;
+        font-family: 'Amatic SC', cursive, sans-serif;
     }
 
     form{
-        margin-top: 10px;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        background-color: white;
+        color: #000;
         border-radius: 5px;
         gap: 1px;
+        padding: 0px 10px 10px 10px;
+        width: 400px;
+        margin-top: 20px;
 
         label{
-            color: white;
-            text-align: center;
-            background-color: $purple;
             width: 100%;
             border-radius: 2px;
-            padding: 2px;
-           
+            padding-bottom: 5px;
+            padding-top: 5px;
         }
 
         textarea{
             height: 60px;
             padding: 5px;
             font-family: 'Roboto Condensed', cursive, sans-serif;
+            border: none;
+            border-bottom: 2px solid $purple;
+            margin-bottom: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
         
         input{
             width: 100%;
-            padding:5px;
-            font-family: 'Roboto Condensed', cursive, sans-serif;
-        }
-        select{
-            width:100%;
             padding: 5px;
             font-family: 'Roboto Condensed', cursive, sans-serif;
+            margin-bottom: 10px;
+            margin-top: 10px;            
+            border: none;
+            border-bottom: 2px solid $purple;
+        }
+        select{
+            width: 100%;
+            padding: 10px;
+            font-family: 'Roboto Condensed', cursive, sans-serif;
+            border: none;
+            border-bottom: 2px solid $purple;
+            margin-bottom: 10px;
+            margin-top: 20px;
             
         }
         button{
@@ -594,14 +626,6 @@ main.contact{
             color: white;
             }
         
-            // a.logo{
-            // width: 700px;
-            // }
-        
-            // img{
-            // width: 700px;
-            // }
-    
         }
 
 
@@ -675,8 +699,8 @@ main.contact{
     main.contact{
         
         form{
-            margin-right: 70px;
-            margin-left: 70px;
+            // margin-right: 70px;
+            // margin-left: 70px;
             
 
             label{
@@ -738,6 +762,8 @@ main.contact{
 /* Responsiveness */
 @media (min-width: 992px){
 
+    //ASIDE TILL ALLA SIDOR
+
     aside{
         div.aside-container{
             div{
@@ -746,7 +772,7 @@ main.contact{
         }
     }
 
-
+    // INDEX
     body{
         
 
@@ -758,12 +784,15 @@ main.contact{
             }
         }
 
-        div.container{
+        //CONTACT
+
+        
             main.contact{
-                form{
-                    margin-right: 250px;
-                    margin-left: 250px;
-                    }
+                // form{
+                //     margin-right: 250px;
+                //     margin-left: 250px;
+                //     width: 50%;
+                //     }
                 article.contact{
                     div.contact-container{
                         div{
@@ -773,14 +802,10 @@ main.contact{
                             width: 24%;
                         }
                     }
-        
-                    
-
-                 
 
                 }
             }
-        }
+        
 
         aside{
         div.aside-container{
