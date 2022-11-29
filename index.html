@@ -65,8 +65,12 @@
         />
       </div>
       <div class="row2">
-        <label for="date">Välj när</label>
-        <input type="date" id="date" name="date" />
+        <label for="date">Välj ett/flera upplägg</label>
+        <select name="service" id="service">
+          <option value="Hämtning">Hämtning/Lämning</option>
+          <option value="Heltid">Heltid/Deltid</option>
+          <option value="Sporadiskt">Sporadiska tillfällen</option>
+        </select>
         <input
           class="button"
           type="button"

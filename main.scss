@@ -43,9 +43,10 @@ body{
         height: 10vh;
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
         a.logo{
-            width: 81%;
+            width: 80vw;
             text-decoration: none;
             display: inline-block;
             margin-left: 15px;
@@ -83,7 +84,6 @@ body{
                     color: white;
                     background-color: black;
                     @include hover(grey);
-                    
                 
                 }
             }
@@ -93,7 +93,7 @@ body{
         .hamb{
             cursor: pointer;
             float: right;
-            padding: 5% 10px;
+            padding-right: 10px;
 
             .hamb-line {
                 background: white;
@@ -154,7 +154,7 @@ body{
     padding: 1%;
     border-radius: 1%;
 
-    .row1{
+    .row1, .row2{
         display: flex;
         flex-direction: column;
         gap: 0.1vh;
@@ -188,27 +188,27 @@ body{
         }
     }
 
-    .row2{
-        display: flex;
-        flex-direction: column;
-        gap: 0.1vh;
-        align-items: center;
+    // .row2{
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 0.1vh;
+    //     align-items: center;
 
-        input{
-            width: 100%;
-            height: 30px;
-            border-radius: 5px;
-        }
+    //     input{
+    //         width: 100%;
+    //         height: 30px;
+    //         border-radius: 5px;
+    //     }
 
-        .button{
-            background-color: $fontcolor;
-            font-weight: 700;
-            font-family: 'Creepster', cursive, sans-serif;
-            padding: 5px;
-            border-radius: 5px;
-            @include hover-color(black, white);
-        }
-    }
+    //     .button{
+    //         background-color: $fontcolor;
+    //         font-weight: 700;
+    //         font-family: 'Creepster', cursive, sans-serif;
+    //         padding: 5px;
+    //         border-radius: 5px;
+    //         @include hover-color(black, white);
+    //     }
+    // }
 }
 
 main{
@@ -336,8 +336,9 @@ main.main-aboutus{
 
 div.employes{
     @include flexwrap;
+
     
-    div{
+    section{
         background-color: $darkpurple;
         border-radius: 5px;
         padding-top: 5px;
@@ -405,7 +406,7 @@ article.services{
         font-size: 100%;
         @include hover-color(black, white);
     }
-    div{
+    section{
         background-color: $darkpurple;
         border-radius: 5px;
         padding-top: 5px;
@@ -654,7 +655,7 @@ main.contact{
                 display: flex;
                 gap: 10px;
                 justify-content: center;
-                div{
+                section{
                     width: 32%;
                     img{
                         width: 200px;
@@ -672,9 +673,20 @@ main.contact{
 
     }
 
+    //TJÄNSTER
+
     main.services{
         img{
             height: 250px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        h1{
+            font-size: 25px;
+        }
+        p{
+            padding: 0px 20px 20px 20px;
         }
     }
     
@@ -699,8 +711,6 @@ main.contact{
     main.contact{
         
         form{
-            // margin-right: 70px;
-            // margin-left: 70px;
             
 
             label{
@@ -788,11 +798,7 @@ main.contact{
 
         
             main.contact{
-                // form{
-                //     margin-right: 250px;
-                //     margin-left: 250px;
-                //     width: 50%;
-                //     }
+                
                 article.contact{
                     div.contact-container{
                         div{

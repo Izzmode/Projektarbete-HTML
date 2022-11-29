@@ -17,12 +17,13 @@ body .header {
   height: 10vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   /* Hide checkbox */
   /* Nav menu */
   /* Menu Icon */
 }
 body .header a.logo {
-  width: 81%;
+  width: 80vw;
   text-decoration: none;
   display: inline-block;
   margin-left: 15px;
@@ -61,7 +62,7 @@ body .header .nav ul a:hover {
 body .header .hamb {
   cursor: pointer;
   float: right;
-  padding: 5% 10px;
+  padding-right: 10px;
 }
 body .header .hamb .hamb-line {
   background: white;
@@ -119,19 +120,19 @@ body .header .hamb .hamb-line::after {
   padding: 1%;
   border-radius: 1%;
 }
-.cta .row1 {
+.cta .row1, .cta .row2 {
   display: flex;
   flex-direction: column;
   gap: 0.1vh;
   align-items: center;
 }
-.cta .row1 select {
+.cta .row1 select, .cta .row2 select {
   width: 100%;
   height: 30px;
   font-family: "Roboto Condensed", cursive, sans-serif;
   border-radius: 5px;
 }
-.cta .row1 .button {
+.cta .row1 .button, .cta .row2 .button {
   width: 100%;
   background-color: hsl(58deg, 100%, 68%);
   font-weight: 700;
@@ -140,37 +141,15 @@ body .header .hamb .hamb-line::after {
   border-radius: 5px;
   height: 30px;
 }
-.cta .row1 .button:hover {
+.cta .row1 .button:hover, .cta .row2 .button:hover {
   background-color: black;
   color: white;
 }
-.cta .row1 .button a {
+.cta .row1 .button a, .cta .row2 .button a {
   text-decoration: none;
   color: #000;
 }
-.cta .row1 .button a:hover {
-  color: white;
-}
-.cta .row2 {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1vh;
-  align-items: center;
-}
-.cta .row2 input {
-  width: 100%;
-  height: 30px;
-  border-radius: 5px;
-}
-.cta .row2 .button {
-  background-color: hsl(58deg, 100%, 68%);
-  font-weight: 700;
-  font-family: "Creepster", cursive, sans-serif;
-  padding: 5px;
-  border-radius: 5px;
-}
-.cta .row2 .button:hover {
-  background-color: black;
+.cta .row1 .button a:hover, .cta .row2 .button a:hover {
   color: white;
 }
 
@@ -280,24 +259,24 @@ div.employes {
   display: flex;
   flex-wrap: wrap;
 }
-div.employes div {
+div.employes section {
   background-color: hsl(284deg, 55%, 35%);
   border-radius: 5px;
   padding-top: 5px;
   margin-bottom: 10px;
   width: 100%;
 }
-div.employes div h2 {
+div.employes section h2 {
   font-family: "Amatic SC", cursive, sans-serif;
   font-size: 30px;
 }
-div.employes div h3 {
+div.employes section h3 {
   font-size: 20px;
   font-weight: 100;
   padding-bottom: 10px;
   font-family: "Amatic SC", cursive, sans-serif;
 }
-div.employes div p {
+div.employes section p {
   padding: 5px;
   padding-bottom: 10px;
 }
@@ -341,7 +320,7 @@ article.services button:hover {
   background-color: black;
   color: white;
 }
-article.services div {
+article.services section {
   background-color: hsl(284deg, 55%, 35%);
   border-radius: 5px;
   padding-top: 5px;
@@ -532,10 +511,10 @@ main.contact form button:hover {
     gap: 10px;
     justify-content: center;
   }
-  body main.main-aboutus .employes div {
+  body main.main-aboutus .employes section {
     width: 32%;
   }
-  body main.main-aboutus .employes div img {
+  body main.main-aboutus .employes section img {
     width: 200px;
   }
   body aside div.aside-container {
@@ -543,6 +522,15 @@ main.contact form button:hover {
   }
   main.services img {
     height: 250px;
+  }
+  main.services h2 {
+    font-size: 20px;
+  }
+  main.services h1 {
+    font-size: 25px;
+  }
+  main.services p {
+    padding: 0px 20px 20px 20px;
   }
   div.flex-family {
     display: flex;
