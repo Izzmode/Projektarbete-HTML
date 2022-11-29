@@ -46,14 +46,15 @@ body{
         justify-content: space-between;
 
         a.logo{
-            width: 80vw;
+            width: 70vw;
             text-decoration: none;
             display: inline-block;
             margin-left: 15px;
+            padding-top: 5px;
         }
 
         img{
-            width: 81%;
+            width: 70vw;
         }
         
         .side-menu {
@@ -188,27 +189,6 @@ body{
         }
     }
 
-    // .row2{
-    //     display: flex;
-    //     flex-direction: column;
-    //     gap: 0.1vh;
-    //     align-items: center;
-
-    //     input{
-    //         width: 100%;
-    //         height: 30px;
-    //         border-radius: 5px;
-    //     }
-
-    //     .button{
-    //         background-color: $fontcolor;
-    //         font-weight: 700;
-    //         font-family: 'Creepster', cursive, sans-serif;
-    //         padding: 5px;
-    //         border-radius: 5px;
-    //         @include hover-color(black, white);
-    //     }
-    // }
 }
 
 main{
@@ -228,11 +208,11 @@ main{
         .article-picture{
             width: 80%;
             padding-left: 4%;
-            padding-right:4% ;
+            padding-right: 4%;
         }
     
         p{
-            padding-bottom: 3%;
+            padding-bottom: 4%;
         }
     }
 }
@@ -255,7 +235,7 @@ aside{
         @include flexwrap;
         justify-content: center;
         padding-top: 10px;
-        gap: 10px;
+        gap: 14px;
 
         div{
             border-radius: 5px;

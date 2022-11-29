@@ -23,13 +23,14 @@ body .header {
   /* Menu Icon */
 }
 body .header a.logo {
-  width: 80vw;
+  width: 70vw;
   text-decoration: none;
   display: inline-block;
   margin-left: 15px;
+  padding-top: 5px;
 }
 body .header img {
-  width: 81%;
+  width: 70vw;
 }
 body .header .side-menu {
   display: none;
@@ -172,7 +173,7 @@ main article .article-picture {
   padding-right: 4%;
 }
 main article p {
-  padding-bottom: 3%;
+  padding-bottom: 4%;
 }
 
 aside {
@@ -193,7 +194,7 @@ aside div.aside-container {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 10px;
-  gap: 10px;
+  gap: 14px;
 }
 aside div.aside-container div {
   border-radius: 5px;
