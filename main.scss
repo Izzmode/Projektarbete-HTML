@@ -33,7 +33,7 @@ $fontcolor: hsl(58, 100%, 68%);
     box-sizing: border-box;
 }
 body{
-    background-color: #2B2B2B;
+    background-color: $darkgrey;
     font-family: 'Roboto Condensed', cursive, sans-serif;
     .header{
         background-color: $purple;
