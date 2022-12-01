@@ -306,6 +306,10 @@ article.services p {
   padding: 5px;
   padding-bottom: 10px;
 }
+article.services div {
+  padding: 5px;
+  padding-bottom: 10px;
+}
 article.services button {
   width: 50%;
   background-color: hsl(58deg, 100%, 68%);
@@ -532,6 +536,9 @@ main.contact form button:hover {
   main.services p {
     padding: 0px 20px 20px 20px;
   }
+  main.services div {
+    padding: 0px 20px 20px 20px;
+  }
   div.flex-family {
     display: flex;
     flex-wrap: wrap;
@@ -616,6 +623,9 @@ main.contact form button:hover {
     font-size: 30px;
   }
   body main p {
+    font-size: 20px;
+  }
+  body main div {
     font-size: 20px;
   }
   body aside div.aside-container div {
