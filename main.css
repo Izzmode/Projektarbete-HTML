@@ -297,10 +297,12 @@ main.services img {
 
 article.services h1 {
   font-family: "Amatic SC", cursive, sans-serif;
+  font-size: 25px;
 }
 article.services h2 {
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 10px;
+  font-family: "Amatic SC", cursive, sans-serif;
 }
 article.services p {
   padding: 5px;
@@ -333,6 +335,10 @@ article.services section {
 }
 
 article.referens h1 {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-size: 25px;
+}
+article.referens h2 {
   font-family: "Amatic SC", cursive, sans-serif;
 }
 article.referens div.flex-family div {
@@ -523,15 +529,19 @@ main.contact form button:hover {
   }
   body aside div.aside-container {
     justify-content: space-around;
+    gap: 0;
+  }
+  body aside div.aside-container div {
+    width: 24%;
   }
   main.services img {
     height: 250px;
   }
   main.services h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   main.services h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   main.services p {
     padding: 0px 20px 20px 20px;
@@ -596,9 +606,6 @@ main.contact form button:hover {
 }
 /* Responsiveness */
 @media (min-width: 992px) {
-  aside div.aside-container div {
-    width: 24%;
-  }
   body main.main-index p {
     padding-left: 100px;
     padding-right: 100px;

@@ -365,10 +365,12 @@ main.services{
 article.services{
     h1{
         font-family: 'Amatic SC', cursive, sans-serif;
+        font-size: 25px;
     }
     h2{
-        font-size: 15px;
+        font-size: 20px;
         margin-top: 10px;
+        font-family: 'Amatic SC', cursive, sans-serif;
     }
     p{
         padding: 5px;
@@ -404,6 +406,10 @@ article.services{
 article.referens{
 
     h1{
+        font-family: 'Amatic SC', cursive, sans-serif;
+        font-size: 25px;
+    }
+    h2{
         font-family: 'Amatic SC', cursive, sans-serif;
     }
 
@@ -651,10 +657,15 @@ main.contact{
         aside{
             div.aside-container{
                 justify-content: space-around;
+                gap: 0;
+                div{
+                    width: 24%;
+                }
             }
        }
 
     }
+    
 
     //TJÄNSTER
 
@@ -663,10 +674,10 @@ main.contact{
             height: 250px;
         }
         h2{
-            font-size: 20px;
+            font-size: 25px;
         }
         h1{
-            font-size: 25px;
+            font-size: 30px;
         }
         p{
             padding: 0px 20px 20px 20px;
@@ -758,15 +769,6 @@ main.contact{
 /* Responsiveness */
 @media (min-width: 992px){
 
-    //ASIDE TILL ALLA SIDOR
-
-    aside{
-        div.aside-container{
-            div{
-                width: 24%;
-            }
-        }
-    }
 
     // INDEX
     body{
